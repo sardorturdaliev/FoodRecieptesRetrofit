@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cardbeef" type="id" />
+    <item name="imgbeef" type="id" />
+    <item name="card_desserts" type="id" />
+    <item name="cardView1" type="id" />
+    <item name="beef_container" type="id" />
+    <item name="tvfood" type="id" />
+    <item name="imgChicken" type="id" />
+    <item name="tvChiken" type="id" />
+    <item name="imgsausecard" type="id" />
+    <item name="imgsauce" type="id" />
+    <item name="tvSause" type="id" />
+    <item name="tvBeef" type="id" />
+    <item name="tvdessert" type="id" />
+    <item name="imgdessert" type="id" />
+    <item name="card_vegeterian" type="id" />
+    <item name="imgvege" type="id" />
+    <item name="card_soup" type="id" />
+    <item name="imgsoupe" type="id" />
+    <item name="card_seafood" type="id" />
+    <item name="imgseafood" type="id" />
+</resources>

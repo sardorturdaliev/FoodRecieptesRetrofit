@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FoodReciepts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recieptes">Recieptes</string>
+    <string name="foods">Foods</string>
+    <string name="desert">Desserts</string>
+</resources>

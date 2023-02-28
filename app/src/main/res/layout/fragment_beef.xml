@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.beefscreen.BeefFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containcer_card"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#F5F5F5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressfoodname"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/tv_food_name"
+            app:layout_constraintLeft_toLeftOf="@id/tv_food_name"
+            app:layout_constraintRight_toRightOf="@id/tv_food_name"
+            app:layout_constraintTop_toTopOf="@id/tv_food_name" />
+
+        <TextView
+            android:id="@+id/tv_recipe_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_food_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_food_name" />
+
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_recipe_count"
+            app:layout_constraintLeft_toLeftOf="@id/tv_recipe_count"
+            app:layout_constraintRight_toRightOf="@id/tv_recipe_count"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="@id/tv_recipe_count" />
+
+        <TextView
+            android:id="@+id/tvrec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recieptes"
+            android:textColor="#9F9F9F"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_recipe_count"
+            app:layout_constraintTop_toBottomOf="@id/tv_recipe_count" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvfoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containcer_card"
+        tools:listitem="@layout/card_item_foods" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
